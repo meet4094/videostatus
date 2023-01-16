@@ -1,0 +1,1146 @@
+{
+	"info": {
+		"_postman_id": "15b4204b-344d-463c-bf55-77b554da1722",
+		"name": "Digital Poster",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user/signUp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Request-Token",
+						"value": "li58W70knA6n7aY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "alpll.1328@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/signUp",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"signUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/logIn",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Request-Token",
+						"value": "li58W70knA6n7aY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "facebook_id",
+							"value": "1234565456465456465416",
+							"description": "type = 2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "google_id",
+							"value": "1234565456465456465416",
+							"description": "type = 3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/logIn",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"logIn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/createProfile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"type": "text",
+						"value": "hPYFNgmME5urgsQ"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "first_name",
+							"value": "Master",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/createProfile",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"createProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/forgotPassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "li58W70knA6n7aY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/forgotPassword",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"forgotPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/resetPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "secret_token",
+							"value": "NcFW4rha8ZRLTh0",
+							"type": "text"
+						},
+						{
+							"key": "new_password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/resetPassword",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"resetPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/resendActivationMail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "li58W70knA6n7aY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/resendActivationMail",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"resendActivationMail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/changePassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"type": "text",
+						"value": "byc802gisEUxF6F"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "new_password",
+							"value": "654321",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/changePassword",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"changePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/editProfile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"type": "text",
+						"value": "GedeAjPKhV4i0qj"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "Master",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/editProfile",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"editProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/getOtherUserDetail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "byc802gisEUxF6F",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ouid",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/getOtherUserDetail",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"getOtherUserDetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/changeEmail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"type": "text",
+						"value": "byc802gisEUxF6F"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "new_email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/changeEmail",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"changeEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/deactivateAccount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "byc802gisEUxF6F",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/deactivateAccount",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"deactivateAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/logOut",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "RQBgQneBZVUkeoz",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/logOut",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"logOut"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/getDetail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "d0PjDKzBScqgxNF",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_id",
+							"value": "AAA",
+							"type": "text"
+						},
+						{
+							"key": "device_token",
+							"value": "BBB",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/getDetail",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"getDetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/lastSeenUpdate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"value": "IcYDEe1nDv7RIHk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/lastSeenUpdate",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"lastSeenUpdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/contactUs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Token",
+						"type": "text",
+						"value": "GedeAjPKhV4i0qj"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "AAA BBB",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "aaabbb@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "subject",
+							"value": "This is test..",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "This is description..",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/contactUs",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"contactUs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/getSettings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/user/getSettings",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"user",
+						"getSettings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "festival/getCategories",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "li58W70knA6n7aY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "start",
+							"value": "0",
+							"description": "redeem_status => 0 - Pending, 1 - Accepted, 2 - Processing, 3 - Completed, 4 -Rejected",
+							"type": "text"
+						},
+						{
+							"key": "len",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/festival/getCategories",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"festival",
+						"getCategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "festival/getImages",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "li58W70knA6n7aY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "start",
+							"value": "0",
+							"description": "redeem_status => 0 - Pending, 1 - Accepted, 2 - Processing, 3 - Completed, 4 -Rejected",
+							"type": "text"
+						},
+						{
+							"key": "len",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/festival/getImages",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"festival",
+						"getImages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "festival/getVideos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "li58W70knA6n7aY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "start",
+							"value": "0",
+							"description": "redeem_status => 0 - Pending, 1 - Accepted, 2 - Processing, 3 - Completed, 4 -Rejected",
+							"type": "text"
+						},
+						{
+							"key": "len",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/festival/getVideos",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"festival",
+						"getVideos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "business/getCategories",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "li58W70knA6n7aY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "start",
+							"value": "0",
+							"description": "redeem_status => 0 - Pending, 1 - Accepted, 2 - Processing, 3 - Completed, 4 -Rejected",
+							"type": "text"
+						},
+						{
+							"key": "len",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/business/getCategories",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"business",
+						"getCategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "business/getImages",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "li58W70knA6n7aY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "start",
+							"value": "0",
+							"description": "redeem_status => 0 - Pending, 1 - Accepted, 2 - Processing, 3 - Completed, 4 -Rejected",
+							"type": "text"
+						},
+						{
+							"key": "len",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/business/getImages",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"business",
+						"getImages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "business/getVideos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "li58W70knA6n7aY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "start",
+							"value": "0",
+							"description": "redeem_status => 0 - Pending, 1 - Accepted, 2 - Processing, 3 - Completed, 4 -Rejected",
+							"type": "text"
+						},
+						{
+							"key": "len",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/business/getVideos",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"business",
+						"getVideos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "greeting/getCategories",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "li58W70knA6n7aY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "start",
+							"value": "0",
+							"description": "redeem_status => 0 - Pending, 1 - Accepted, 2 - Processing, 3 - Completed, 4 -Rejected",
+							"type": "text"
+						},
+						{
+							"key": "len",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/greeting/getCategories",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"greeting",
+						"getCategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "greeting/getImages",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "li58W70knA6n7aY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "start",
+							"value": "0",
+							"description": "redeem_status => 0 - Pending, 1 - Accepted, 2 - Processing, 3 - Completed, 4 -Rejected",
+							"type": "text"
+						},
+						{
+							"key": "len",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/greeting/getImages",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"greeting",
+						"getImages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "greeting/getVideos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "li58W70knA6n7aY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "start",
+							"value": "0",
+							"description": "redeem_status => 0 - Pending, 1 - Accepted, 2 - Processing, 3 - Completed, 4 -Rejected",
+							"type": "text"
+						},
+						{
+							"key": "len",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://envatomarket.aryatechlabs.com/digitalposter/api/greeting/getVideos",
+					"protocol": "https",
+					"host": [
+						"envatomarket",
+						"aryatechlabs",
+						"com"
+					],
+					"path": [
+						"digitalposter",
+						"api",
+						"greeting",
+						"getVideos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
